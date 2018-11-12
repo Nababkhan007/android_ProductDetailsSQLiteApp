@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e7e7e7"
+    tools:context=".AddProductActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="vertical">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/productNameEtId"
+                android:hint="Product Name"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/productColorEtId"
+                android:hint="Product Color"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/productPriceEtId"
+                    android:layout_weight=".5"
+                    android:layout_margin="1dp"
+                    android:hint="Product Price"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/availableQuantityEtId"
+                    android:layout_weight=".5"
+                    android:layout_margin="1dp"
+                    android:hint="Available Quantity"/>
+
+            </LinearLayout>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/productSizeEtId"
+                android:hint="Product Name"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/brandNameTvId"
+                android:layout_marginTop="5dp"
+                android:text="Brand Name"
+                android:textSize="18dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/catsEyeCkbId"
+                    android:layout_margin="5dp"
+                    android:text="Cats Eye"/>
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/dorjiBariCkbId"
+                    android:layout_margin="5dp"
+                    android:text="Dorji Bari"/>
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/nababFashionCkbId"
+                    android:layout_margin="5dp"
+                    android:text="Nabab Fashion"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="horizontal">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/profileIvId"
+                    android:layout_margin="5dp"
+                    android:layout_weight=".1"
+                    android:layout_width="96dp"
+                    android:layout_height="96dp"
+                    android:src="@drawable/circle_person_image"
+                    app:civ_border_width="2dp"
+                    app:civ_border_color="#FF000000"/>
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:layout_weight=".9"
+                    android:id="@+id/captureProductImageBtnId"
+                    android:text="Capture Product Image"
+                    android:textColor="@color/text_color_white"
+                    android:background="@color/colorPrimaryDark"
+                    android:textAllCaps="false"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight=".5"
+                    android:background="@color/colorPrimary"
+                    android:id="@+id/addBtnId"
+                    android:text="Add"
+                    android:textColor="@color/text_color_white"
+                    android:textAllCaps="false"/>
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight=".5"
+                    android:background="@color/colorPrimary"
+                    android:id="@+id/showBtnId"
+                    android:text="Show"
+                    android:textColor="@color/text_color_white"
+                    android:textAllCaps="false"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
